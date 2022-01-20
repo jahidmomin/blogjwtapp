@@ -9,5 +9,5 @@ import com.springboot.blog.app.model.Role;
 
 @Repository
 public interface RoleDao extends CrudRepository<Role, Integer> {
-
+	public Role findByRoleName(String roleName);
 }

@@ -7,4 +7,5 @@ import com.springboot.blog.app.model.User;
 
 @Repository
 public interface UserDao extends CrudRepository<User, Integer>{
+	User findByUserName(String username);
 }
